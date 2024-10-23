@@ -19,7 +19,7 @@ class Agent {
   Agent() {
     x = (float)Math.random()*width;
     y = (float)Math.random()*height;
-    orientation = (float)Math.random()*TAU;
+    orientation = (float)Math.random()*PI*2;
   }
   void tick() {
     to = 4.7123889803846898576939650749192543262957540990626587314624-atan2(x-targetx, y-targety);
